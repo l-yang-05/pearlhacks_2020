@@ -1,24 +1,9 @@
 import React from 'react';
-import {Nav, Navbar, Button} from 'react-bootstrap';
 import Cards from './Cards';
 
 const Home = () => {
     return (
       <>
-      {/* navbar */}
-    <Navbar expand="md" className='pb-4'>
-      <Navbar.Brand href="/">Mauve</Navbar.Brand>
-      <Navbar.Toggle aria-controls="basic-navbar-nav " />
-        <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="ml-auto">
-            <Nav.Item>
-            <Nav.Link href="/login">Login</Nav.Link>
-            </Nav.Item>
-          </Nav>
-        </Navbar.Collapse>
-      </Navbar>
-      {/* end navbar */}
-
       {/* photo */}
       <div className="home-img">
         <img src="img/womenintech.jpg"/>
@@ -35,7 +20,7 @@ const Home = () => {
 
       {/* footer */}
       <footer className="footer">
-
+        
       </footer>
       {/* end footer */}
       </>
