@@ -21,6 +21,13 @@ nav.navbar-light {
     .navbar-brand {
         color: white;
     }
+    button.navbar-light-button{
+        background-color: black;
+        color: white;
+        border: 0;
+        padding: 5px 15px;
+        border-radius: 5px;
+    }
 
 }
 
@@ -31,4 +38,9 @@ nav.navbar-light {
     img {
         max-width: 100vw;
     }
+}
+
+.logo{
+    width: 200px;
+    height: auto;
 }
