@@ -21,14 +21,13 @@ nav.navbar-light {
     .navbar-brand {
         color: white;
     }
-
-}
-
-.home-img {
-    width: 100vw;
-    height: 200px;
-    object-fit: contain;
-    img {
-        max-width: 100vw;
+    button.navbar-light-button{
+        background-color: black;
+        color: white;
+        border: 0;
+        padding: 5px 15px;
+        border-radius: 5px;
     }
+
 }
+
