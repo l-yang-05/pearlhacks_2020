@@ -1,4 +1,16 @@
 .footer {
-    background-color: purple;
-    height: 200px;
+    background-color: white;
+    padding: 40px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+}
+
+.sm-icon {
+    height: 50px;
+    width: 50px;
+    margin-left: 20px;
+    svg {
+        fill: purple;
+    }
 }
