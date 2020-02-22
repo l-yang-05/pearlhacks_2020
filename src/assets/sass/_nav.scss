@@ -31,3 +31,16 @@ nav.navbar-light {
 
 }
 
+.home-img {
+    width: 100vw;
+    height: 200px;
+    object-fit: contain;
+    img {
+        max-width: 100vw;
+    }
+}
+
+.logo{
+    width: 200px;
+    height: auto;
+}
