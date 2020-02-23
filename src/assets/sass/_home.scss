@@ -10,6 +10,7 @@
 
 .motto{
    padding: 5px;
+   width: auto;
 }
 
 @media(max-width: 425px){
@@ -47,7 +48,7 @@
     }
     @media (max-width: 768px) {
         .motto{
-            width: 100%;
+            width: auto;
             padding:5px;
             margin:0px;
         }
@@ -56,5 +57,5 @@
 }
 
 .motto {
-    max-width: 100%;
+    width: auto;
 }
