@@ -2,6 +2,7 @@ import React from 'react';
 import { Nav, Navbar, Button } from 'react-bootstrap';
 import logo from '../assets/imgs/mauve-logo.png';
 
+
 const Navigation = () => {
   return (
     <Navbar expand="md" className='pb-4'>
@@ -10,10 +11,18 @@ const Navigation = () => {
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="ml-auto">
           <Nav.Item>
-            <Nav.Link href="/login">
-              <button className="navbar-light-button">
-                Login
-              </button>
+            <Nav.Link href="/">
+              Home
+            </Nav.Link>
+          </Nav.Item>
+          <Nav.Item>
+            <Nav.Link>
+              Login
+            </Nav.Link>
+          </Nav.Item>
+          <Nav.Item>
+            <Nav.Link href="/signup">
+              Sign Up
             </Nav.Link>
           </Nav.Item>
         </Nav>
