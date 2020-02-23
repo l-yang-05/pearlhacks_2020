@@ -22,6 +22,7 @@
 
 .cards {
     padding: 25px;
+    background-color: #B23A48;
     &__item {
         background-color: white; 
         padding: 20px;
@@ -44,6 +45,14 @@
         display: grid;
         grid-template-columns: 33% 33% 33%;
     }
+    @media (max-width: 768px) {
+        .motto{
+            width: 100%;
+            padding:5px;
+            margin:0px;
+        }
+    }
+
 }
 
 .motto {

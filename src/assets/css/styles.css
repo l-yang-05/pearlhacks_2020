@@ -64,10 +64,11 @@ nav.navbar-light button.navbar-light-button {
 }
 
 .cards {
+  background-color: #B23A48;
   padding: 25px;
 }
 .cards__item {
-  background-color: #B23A48;
+  background-color: white;
   padding: 20px;
   margin: 10px;
   margin-bottom: 50px;
@@ -85,7 +86,7 @@ nav.navbar-light button.navbar-light-button {
 }
 @media (min-width: 900px) {
   .cards {
-    background-color: #B23A48;
+    background-color: white;
     display: grid;
     grid-template-columns: 33% 33% 33%;
   }
@@ -420,6 +421,11 @@ form {
   .avatar-icon{
       height: 250px;
   }
+  .motto{
+    width: 100%;
+    padding:5px;
+    margin:0px;
+}
  }
 
 
