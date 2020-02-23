@@ -1,12 +1,12 @@
 import React from 'react';
-import { Nav, Navbar} from 'react-bootstrap';
+import { Nav, Navbar } from 'react-bootstrap';
 import logo from '../assets/imgs/mauve-logo.png';
 
 
 const Navigation = () => {
   return (
     <Navbar expand="md" className='pb-4'>
-      <Navbar.Brand href="/">
+      <Navbar.Brand>
         <img src={logo} alt="logo" className="logo" />
       </Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />

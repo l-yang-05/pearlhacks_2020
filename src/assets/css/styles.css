@@ -312,17 +312,56 @@ form {
   color: #B23A48;
 }
 
-.project__item {
+
+.project__item{
   background-color: white;
   margin: 10px;
-  display: flex;
+  display: grid;
+  grid-template-rows: auto auto auto;
   border-radius: 5px;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
   padding: 25px;
-  width: 31.5%;
 }
+
+
+
+@media(max-width: 750px){
+  .project-container{
+    display: grid;
+      grid-template-rows: auto auto;
+  }
+
+  .project-container h2{
+      font-size: 1.5rem;
+  }
+  .project__item{
+    width: 100%;
+  }
+
+}
+
+
+@media(max-width: 400px){
+  .project-container{
+      grid-template-rows: auto;
+      display: grid;
+  }
+
+  .project-container h2{
+      font-size: 1.5rem;
+  }
+}
+
+
+.project-pfp{
+  height:50px;
+  border-radius: 100%;
+  border: solid #d4a1c9 3px;
+}
+
+
+
 
 .btn-secondary {
   background-color: #d4a1c9 !important;
