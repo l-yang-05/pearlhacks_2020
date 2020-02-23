@@ -86,6 +86,10 @@ nav.navbar-light button.navbar-light-button {
   }
 }
 
+.motto {
+  max-width: 100%;
+}
+
 footer {
   background-color: white;
   height: 100%;
