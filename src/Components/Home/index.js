@@ -20,7 +20,6 @@ const Home = () => {
         <Cards title={"Our Vision"} description={"Our vision is to bridge the gender gap within tech by providing women with the tools and support to succeed."} />
       </div>
       {/* end about cards */}
-      <Footer />
     </>
   );
 }

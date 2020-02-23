@@ -26,7 +26,7 @@ nav.navbar-light .navbar-brand {
   color: white;
 }
 nav.navbar-light button.navbar-light-button {
-  background-color: #B23A48;
+  background-color: black;
   color: white;
   border: 0;
   padding: 5px 15px;
@@ -57,8 +57,11 @@ nav.navbar-light button.navbar-light-button {
   height: 100%;
 }
 
+.cards {
+  padding: 20px;
+}
 .cards__item {
-  background-color: #C08FE8;
+  background-color: #D4A1CA;
   padding: 20px;
   margin: 10px;
   border-radius: 5px;
@@ -72,6 +75,8 @@ nav.navbar-light button.navbar-light-button {
 
 .footer {
   background-color: white;
+  height: 200px;
+  box-shadow: black 5px 5px 20px;
   padding: 40px;
   height: 150px;
   display: flex;
@@ -84,7 +89,7 @@ nav.navbar-light button.navbar-light-button {
   margin-left: 20px;
 }
 .sm-icon svg {
-  fill: purple;
+  fill: #B43949;
 }
 
 .survey-question-one, .survey-question-two {
@@ -100,28 +105,26 @@ nav.navbar-light button.navbar-light-button {
   font-size: 30px;
 }
 
-
-form{
+form {
   display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    box-shadow: grey 2px 2px 10px;
-    padding: 20px;
-    border-radius: 20px;
-    margin: 230px;
-    width: 500px;
-    background: white;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: grey 2px 2px 10px;
+  padding: 20px;
+  border-radius: 20px;
+  margin: 230px;
+  width: 500px;
+  background: white;
 }
 
-
-.signUp{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-image: url(https://images.unsplash.com/photo-1573495628363-7114730a4a11?ixlib=rb-1.2.1&auto=format&fit=crop&w=2100&q=80);
-    background-position: center;
+.signUp {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: url(https://images.unsplash.com/photo-1573495628363-7114730a4a11?ixlib=rb-1.2.1&auto=format&fit=crop&w=2100&q=80);
+  background-position: center;
 }
 
 /*# sourceMappingURL=styles.css.map */
