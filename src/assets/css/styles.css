@@ -276,15 +276,21 @@ form {
   border: 1px solid black !important;
 }
 
+.motto{
+  width: 100%;
+  height: auto;
+}
+
+
 .btn-primary {
   color: #fff;
-  background-color: #B23A48;
-  border-color: #B23A48;
+  background-color: #B23A48 !important;
+  border-color: #B23A48 !important;
 }
 
 .btn-primary:hover {
-  background-color: #B23A48;
-  border-color: #B23A48;
+  background-color: #B23A48 !important;
+  border-color: #B23A48 !important;
 }
 
 .project-container {
