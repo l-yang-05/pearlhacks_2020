@@ -1,14 +1,15 @@
-import React, {useState} from 'react';
-import Navigation from '../Navigation';
+import React, { useState } from 'react';
+import UserNavigation from '../UserNavigation';
+import { Link } from 'react-router-dom';
 
-const Button = ({c}) => {
+const Button = ({ c }) => {
     const [choice, makeChoice] = useState(false)
 
     const handleChoice = () => {
         makeChoice(!choice)
     }
-    return(
-        <div onClick={handleChoice}  className={"survey-item " + (choice ? "success" : "")}>
+    return (
+        <div onClick={handleChoice} className={"survey-item " + (choice ? "success" : "")}>
             <p className="survey-item-name">{c}</p>
         </div>
     );
@@ -17,31 +18,33 @@ const Button = ({c}) => {
 
 const Survey = () => {
     const reasons = [
-            "To find a mentor", "To make friends","To learn new things"
-       ] 
-    return(
+        "To find a mentor", "To make friends", "To learn new things"
+    ]
+    return (
         <>
-        <Navigation />
-        <div>
-            <p className="survey-question-one">
-                Tell us a little bit about yourself?
+            <UserNavigation />
+            <div>
+                <p className="survey-question-one">
+                    Tell us a little bit about yourself?
             </p>
-            <p className="survey-question-two">
-                Why do you want to join Mauve?
+                <p className="survey-question-two">
+                    Why do you want to join Mauve?
             </p>
-            <div className="survey-items">
-            {reasons.map(c => (               
-                <>   
-                <Button c={c}/>
-                </>
-            ))}
+                <div className="survey-items">
+                    {reasons.map(c => (
+                        <>
+                            <Button c={c} />
+                        </>
+                    ))}
+                </div>
+                <div className="survey-button">
+                    <Link to="/dashboard">
+                        <button>
+                            Submit
+                        </button>
+                    </Link>
+                </div>
             </div>
-            <div className="survey-button">
-                <button>
-                Submit
-                </button>
-            </div>
-        </div>
         </>
     )
 }
