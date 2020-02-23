@@ -19,9 +19,6 @@ const Home = () => {
       </div>
       {/* end about cards */}
 
-      {/* footer */}
-      <Footer />
-      {/* end footer */}
     </>
   );
 }
