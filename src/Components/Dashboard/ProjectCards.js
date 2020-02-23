@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Button, Modal } from 'react-bootstrap';
 import pfp from '../../assets/imgs/girl.svg';
 
-const Cards = ({ title, name, avatar, description, tech }) => {
+const Cards = ({ title, name, description, tech }) => {
     const [show, setShow] = useState(false);
 
     const handleClose = () => setShow(false);
@@ -20,6 +20,7 @@ const Cards = ({ title, name, avatar, description, tech }) => {
             <p>
                 {description}
             </p>
+            <p className="tech-stack">{tech}</p>
             <Button onClick={handleShow}>
                 Collaborate with me!
             </Button>
@@ -31,7 +32,7 @@ const Cards = ({ title, name, avatar, description, tech }) => {
                 </Modal.Header>
                 <Modal.Body>{name}</Modal.Body>
                 <Modal.Body>{description}</Modal.Body>
-                <Modal.Body>{tech}</Modal.Body>
+                <Modal.Body className="tech-stack">{tech}</Modal.Body>
                 <Modal.Footer>
                     <Button variant="secondary" onClick={handleClose}>
                         Close

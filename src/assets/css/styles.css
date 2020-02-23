@@ -363,6 +363,22 @@ form {
 }
 
 
+.tech-stack{
+  background-color: #c193b8;
+  width: fit-content;
+  padding: 5px;
+}
+p .tech-stack{
+  background-color: #c193b8;
+  width: fit-content;
+  padding: 5px;
+}
+
+.modal-body .tech-stack{
+  margin: 20px !important;
+}
+
+
 .btn-primary {
   color: #fff;
   background-color: #B23A48 !important;
