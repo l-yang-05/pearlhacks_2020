@@ -59,13 +59,20 @@ nav.navbar-light button.navbar-light-button {
 }
 
 .motto {
-  width: 100%;
-  height: auto;
+  padding: 5px;
+  width: auto;
 }
 
+@media (max-width: 425px) {
+  .motto {
+    margin: 0px !important;
+    padding: 5px;
+    width: 100%;
+  }
+}
 .cards {
-  background-color: #B23A48;
   padding: 25px;
+  background-color: #B23A48 !important;
 }
 .cards__item {
   background-color: white;
@@ -86,11 +93,18 @@ nav.navbar-light button.navbar-light-button {
 }
 @media (min-width: 900px) {
   .cards {
+    background-color: #B23A48;
     display: grid;
     grid-template-columns: 33% 33% 33%;
   }
 }
-
+@media (max-width: 768px) {
+  .cards .motto {
+    width: auto;
+    padding: 5px;
+    margin: 0px;
+  }
+}
 
 .motto {
   width: auto;
@@ -152,77 +166,6 @@ hr {
   border-radius: 5px;
   height: 200px;
 }
-
-.avatar-icon{
-  height: 250px;
-  width: auto;
-  margin: 20px;
-  border-radius: 100%;
-  border: #d4a1c9 6px solid;
-}
-
-.account-container{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 10px;
-}
-
-.info-container{
-  margin: 35px;
-}
-
-.info-container ul{
-  display: flex;
-  list-style: none;
-  padding: 0;
-}
-
-.work-container p{
-  font-size: 1.5rem;
-}
-.connect-container p{
-  font-size: 1.5rem;
-}
-.work-container h2{
-  font-size: 2.5em;
-}
-
-.connect-container h2{
-  font-size: 2.5em;
-}
-
-.work-container{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  background-color: #b43949;
-  height: 250px;
-  color: white;
-}
-
-.connect-container{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  background-color: #d4a1c9;
-  height: 250px;
-  color: black;   
-}
-.info-container ul li{
-  margin: 10px;
-  padding: 15px;
-  box-shadow: grey 2px 2px 5px;
-  background-color: #d4a1c9;
-  border-radius: 20px 5px 20px 5px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-self: center;
-}
-
 .survey-item:hover {
   transform: scale(1.02);
 }
@@ -264,71 +207,6 @@ hr {
   font-weight: 800;
 }
 
-.account-heading{
-  color:#B23A48;
-  margin-top:50px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-
-@media(max-width: 425px){
-  .motto{
-    margin:0px !important;
-    padding:5px;
-    width:100%;
-  }
-}
-
-
-@media(min-width: 425px){
-  form{
-    width: 80%;
-}
-  .avatar-icon{
-      height: 150px;
-  }
-  .account-container{
-      flex-direction: column;
-  }
-
-  .info-container h2{
-   font-size: 1.5rem;
-   margin: 10px;
-  }
-  .work-container h2, .connect-container h2{
-    font-size: 1.5em;
-}
-
-.work-container p, .connect-container p{
-  font-size: 1em;
-  text-align: center;
-}
-
-
- }
-
- @media(min-width: 375px){
-  .account-container{
-      display: flex;
-      flex-direction: column;
-  }
-.info-container h2{
-    font-size: 1em;
-   }
-
-.info-container ul{
-  flex-wrap: wrap;
-}
-.work-container p, .connect-container p{
-  font-size: .8em;
-  text-align: center;
-} }
-
-
-
 form {
   display: flex;
   flex-direction: column;
@@ -341,8 +219,6 @@ form {
   width: 500px;
   background: white;
 }
-
-
 
 .signUp {
   display: flex;
@@ -357,12 +233,6 @@ form {
   border: 1px solid black !important;
 }
 
-.motto{
-  height: auto;
-  margin:25px;
-}
-
-
 .btn-primary {
   color: #fff;
   background-color: #B23A48 !important;
@@ -374,6 +244,11 @@ form {
   border-color: #B23A48 !important;
 }
 
+@media (max-width: 425px) {
+  form {
+    width: 80%;
+  }
+}
 .project-container {
   display: flex;
   flex-wrap: wrap;
@@ -384,12 +259,7 @@ form {
   background-color: #d4a1c9;
 }
 
-.info-container h1{
-  color: #B23A48;
-}
-
-
-.project__item{
+.project__item {
   background-color: white;
   margin: 10px;
   display: grid;
@@ -400,55 +270,34 @@ form {
   padding: 25px;
 }
 
-
-
-@media(max-width: 750px){
-  .project-container{
+@media (max-width: 750px) {
+  .project-container {
     display: grid;
-      grid-template-rows: auto auto;
+    grid-template-rows: auto auto;
   }
 
-  .project-container h2{
-      font-size: 1.5rem;
+  .project-container h2 {
+    font-size: 1.5rem;
   }
-  .project__item{
+
+  .project__item {
     width: 100%;
   }
-
 }
-
-@media(min-width: 768px){
-  .avatar-icon{
-      height: 250px;
-  }
-  .motto{
-    width: auto;
-    padding:5px;
-    margin:0px;
-}
- }
-
-
-@media(max-width: 400px){
-  .project-container{
-      grid-template-rows: auto;
-      display: grid;
+@media (min-width: 400px) {
+  .project-container {
+    display: flex;
   }
 
-  .project-container h2{
-      font-size: 1.5rem;
+  .project-container h2 {
+    font-size: 1.5rem;
   }
 }
-
-
-.project-pfp{
-  height:50px;
+.project-pfp {
+  height: 50px;
   border-radius: 100%;
   border: solid #d4a1c9 3px;
 }
-
-
-
 
 .btn-secondary {
   background-color: #d4a1c9 !important;
@@ -479,10 +328,12 @@ form {
   margin: 10px;
   justify-content: center;
   align-items: center;
+  width: 100%;
 }
 
 .info-container {
   margin: 35px;
+  width: 100%;
 }
 
 .info-container h1 {
@@ -505,6 +356,19 @@ form {
   box-shadow: grey 2px 2px 5px;
   background-color: #d4a1c9;
   border-radius: 20px 5px 20px 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-self: center;
+}
+
+.account-heading {
+  color: #B23A48;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .work-container {
@@ -515,6 +379,7 @@ form {
   background-color: #b43949;
   height: 250px;
   color: white;
+  width: 100%;
 }
 
 .work-container p {
@@ -541,6 +406,54 @@ form {
   background-color: #d4a1c9;
   height: 250px;
   color: black;
+}
+
+@media (min-width: 768px) {
+  .avatar-icon {
+    height: 250px;
+  }
+}
+@media (min-width: 425px) {
+  .avatar-icon {
+    height: 150px;
+  }
+
+  .account-container {
+    flex-direction: column;
+  }
+
+  .info-container h2 {
+    font-size: 1.5rem;
+    margin: 10px;
+  }
+
+  .work-container h2, .connect-container h2 {
+    font-size: 1.5em;
+  }
+
+  .work-container p, .connect-container p {
+    font-size: 1em;
+    text-align: center;
+  }
+}
+@media (min-width: 375px) {
+  .account-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .info-container h2 {
+    font-size: 1em;
+  }
+
+  .info-container ul {
+    flex-wrap: wrap;
+  }
+
+  .work-container p, .connect-container p {
+    font-size: 0.8em;
+    text-align: center;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

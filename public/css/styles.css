@@ -59,15 +59,23 @@ nav.navbar-light button.navbar-light-button {
 }
 
 .motto {
-  width: 100%;
-  height: auto;
+  padding: 5px;
+  width: auto;
 }
 
+@media (max-width: 425px) {
+  .motto {
+    margin: 0px !important;
+    padding: 5px;
+    width: 100%;
+  }
+}
 .cards {
   padding: 25px;
+  background-color: #B23A48 !important;
 }
 .cards__item {
-  background-color: #B23A48;
+  background-color: white;
   padding: 20px;
   margin: 10px;
   margin-bottom: 50px;
@@ -90,9 +98,16 @@ nav.navbar-light button.navbar-light-button {
     grid-template-columns: 33% 33% 33%;
   }
 }
+@media (max-width: 768px) {
+  .cards .motto {
+    width: auto;
+    padding: 5px;
+    margin: 0px;
+  }
+}
 
 .motto {
-  max-width: 100%;
+  width: auto;
 }
 
 footer {
@@ -224,6 +239,11 @@ form {
   border-color: #B23A48 !important;
 }
 
+@media (max-width: 425px) {
+  form {
+    width: 80%;
+  }
+}
 .project-container {
   display: flex;
   flex-wrap: wrap;
@@ -237,17 +257,41 @@ form {
 .project__item {
   background-color: white;
   margin: 10px;
-  display: flex;
+  display: grid;
+  grid-template-rows: auto auto auto;
   border-radius: 5px;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
   padding: 25px;
-  width: 31.5%;
 }
 
+@media (max-width: 750px) {
+  .project-container {
+    display: grid;
+    grid-template-rows: auto auto;
+  }
+
+  .project-container h2 {
+    font-size: 1.5rem;
+  }
+
+  .project__item {
+    width: 100%;
+  }
+}
+@media (min-width: 400px) {
+  .project-container {
+    display: flex;
+  }
+
+  .project-container h2 {
+    font-size: 1.5rem;
+  }
+}
 .project-pfp {
   height: 50px;
+  border-radius: 100%;
+  border: solid #d4a1c9 3px;
 }
 
 .btn-secondary {
@@ -279,10 +323,12 @@ form {
   margin: 10px;
   justify-content: center;
   align-items: center;
+  width: 100%;
 }
 
 .info-container {
   margin: 35px;
+  width: 100%;
 }
 
 .info-container h1 {
@@ -305,6 +351,19 @@ form {
   box-shadow: grey 2px 2px 5px;
   background-color: #d4a1c9;
   border-radius: 20px 5px 20px 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-self: center;
+}
+
+.account-heading {
+  color: #B23A48;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .work-container {
@@ -315,6 +374,7 @@ form {
   background-color: #b43949;
   height: 250px;
   color: white;
+  width: 100%;
 }
 
 .work-container p {
@@ -341,6 +401,54 @@ form {
   background-color: #d4a1c9;
   height: 250px;
   color: black;
+}
+
+@media (min-width: 768px) {
+  .avatar-icon {
+    height: 250px;
+  }
+}
+@media (min-width: 425px) {
+  .avatar-icon {
+    height: 150px;
+  }
+
+  .account-container {
+    flex-direction: column;
+  }
+
+  .info-container h2 {
+    font-size: 1.5rem;
+    margin: 10px;
+  }
+
+  .work-container h2, .connect-container h2 {
+    font-size: 1.5em;
+  }
+
+  .work-container p, .connect-container p {
+    font-size: 1em;
+    text-align: center;
+  }
+}
+@media (min-width: 375px) {
+  .account-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .info-container h2 {
+    font-size: 1em;
+  }
+
+  .info-container ul {
+    flex-wrap: wrap;
+  }
+
+  .work-container p, .connect-container p {
+    font-size: 0.8em;
+    text-align: center;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
