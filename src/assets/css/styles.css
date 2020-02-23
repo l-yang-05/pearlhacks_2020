@@ -1,3 +1,4 @@
+@charset "UTF-8";
 nav.navbar-light {
   background-color: white;
   color: black;
@@ -110,12 +111,18 @@ nav.navbar-light button.navbar-light-button {
   padding: 20px;
   margin: 20px;
   border-radius: 5px;
+  height: 200px;
 }
 .survey-item:hover {
   transform: scale(1.02);
 }
-@media (min-width: 900px) {
+@media (max-width: 900px) {
   .survey-item {
+    height: 100px;
+  }
+}
+@media (min-width: 900px) {
+  .survey-items {
     display: grid;
     grid-template-columns: 33% 33% 33%;
   }
@@ -129,6 +136,17 @@ nav.navbar-light button.navbar-light-button {
   padding: 10px 20px;
   border-radius: 5px;
   color: white;
+}
+
+.success {
+  background-color: red;
+  color: white;
+}
+.success:before {
+  content: "✓";
+  color: white;
+  font-size: 24px;
+  font-weight: 800;
 }
 
 form {

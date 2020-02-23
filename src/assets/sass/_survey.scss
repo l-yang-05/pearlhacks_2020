@@ -16,9 +16,19 @@
         padding: 20px;
         margin: 20px;
         border-radius: 5px;
+        height: 200px;
         &:hover {
             transform: scale(1.02);
         }
+        @media (max-width: 900px){
+            height: 100px;
+        }
+        &-name {
+            
+        }
+    }
+    
+    &-items {
         @media (min-width: 900px){
             display: grid;
             grid-template-columns: 33% 33% 33%;
@@ -37,4 +47,14 @@
     }
 }
 
+.success {
+    background-color: red; 
+    color: white;
+    &:before {
+        content: "\2713";
+        color: white;
+        font-size: 24px;
+        font-weight: 800;
+    }
+}
 
