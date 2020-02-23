@@ -206,7 +206,11 @@ hr {
   padding: 15px;
   box-shadow: grey 2px 2px 5px;
   background-color: #d4a1c9;
-  border-radius: 20px 5px 20px 5px
+  border-radius: 20px 5px 20px 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-self: center;
 }
 
 .survey-item:hover {
@@ -250,6 +254,71 @@ hr {
   font-weight: 800;
 }
 
+.account-heading{
+  color:#B23A48;
+  margin-top:50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+
+@media(max-width: 425px){
+  .motto{
+    margin:0px !important;
+    padding:5px;
+    width:100%;
+  }
+}
+
+
+@media(min-width: 425px){
+  form{
+    width: 80%;
+}
+  .avatar-icon{
+      height: 150px;
+  }
+  .account-container{
+      flex-direction: column;
+  }
+
+  .info-container h2{
+   font-size: 1.5rem;
+   margin: 10px;
+  }
+  .work-container h2, .connect-container h2{
+    font-size: 1.5em;
+}
+
+.work-container p, .connect-container p{
+  font-size: 1em;
+  text-align: center;
+}
+
+
+ }
+
+ @media(min-width: 375px){
+  .account-container{
+      display: flex;
+      flex-direction: column;
+  }
+.info-container h2{
+    font-size: 1em;
+   }
+
+.info-container ul{
+  flex-wrap: wrap;
+}
+.work-container p, .connect-container p{
+  font-size: .8em;
+  text-align: center;
+} }
+
+
+
 form {
   display: flex;
   flex-direction: column;
@@ -262,6 +331,8 @@ form {
   width: 500px;
   background: white;
 }
+
+
 
 .signUp {
   display: flex;
@@ -277,8 +348,8 @@ form {
 }
 
 .motto{
-  width: 100%;
   height: auto;
+  margin:25px;
 }
 
 
@@ -340,6 +411,12 @@ form {
   }
 
 }
+
+@media(min-width: 768px){
+  .avatar-icon{
+      height: 250px;
+  }
+ }
 
 
 @media(max-width: 400px){

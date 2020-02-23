@@ -9,9 +9,16 @@
 }
 
 .motto{
-    width: 100%;
-    height: auto;
+    margin: 25px;
 }
+
+@media(max-width: 425px){
+    .motto{
+      margin:0px !important;
+      padding:5px;
+      width:100%;
+    }
+  }
 
 .cards {
     padding: 25px;

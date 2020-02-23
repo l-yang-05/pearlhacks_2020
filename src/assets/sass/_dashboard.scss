@@ -35,12 +35,11 @@
     }
   
   }
-  
+
   
   @media(min-width: 400px){
     .project-container{
-        grid-template-rows: auto;
-        display: grid;
+       display: flex;
     }
   
     .project-container h2{

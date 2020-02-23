@@ -7,18 +7,19 @@ const Dashboard = () => {
     return (
         <>
             <UserNavigation />
-            <div className="project-container">
-                <ProjectCards title={"Full-Stack MERN Web Hub App"} description={"Let's get together and make something fun that everyone can use!"} />
-                <ProjectCards title={"Full-Stack MERN Web Hub App"} description={"Let's get together and make something fun that everyone can use!"} />
-                <ProjectCards title={"Full-Stack MERN Web Hub App"} description={"Let's get together and make something fun that everyone can use!"} />
-                <ProjectCards title={"Full-Stack MERN Web Hub App"} description={"Let's get together and make something fun that everyone can use!"} />
-                <ProjectCards title={"Full-Stack MERN Web Hub App"} description={"Let's get together and make something fun that everyone can use!"} />
-                <ProjectCards title={"Full-Stack MERN Web Hub App"} description={"Let's get together and make something fun that everyone can use!"} />
-                <ProjectCards title={"Full-Stack MERN Web Hub App"} description={"Let's get together and make something fun that everyone can use!"} />
-                <ProjectCards title={"Full-Stack MERN Web Hub App"} description={"Let's get together and make something fun that everyone can use!"} />
-                <ProjectCards title={"Full-Stack MERN Web Hub App"} description={"Let's get together and make something fun that everyone can use!"} />
+            <div>
+                <div className="project-container">
+                    <ProjectCards title={"Full-Stack MERN Web Hub App"} description={"Let's get together and make something fun that everyone can use!"} />
+                    <ProjectCards title={"Full-Stack MERN Web Hub App"} description={"Let's get together and make something fun that everyone can use!"} />
+                    <ProjectCards title={"Full-Stack MERN Web Hub App"} description={"Let's get together and make something fun that everyone can use!"} />
+                    <ProjectCards title={"Full-Stack MERN Web Hub App"} description={"Let's get together and make something fun that everyone can use!"} />
+                    <ProjectCards title={"Full-Stack MERN Web Hub App"} description={"Let's get together and make something fun that everyone can use!"} />
+                    <ProjectCards title={"Full-Stack MERN Web Hub App"} description={"Let's get together and make something fun that everyone can use!"} />
+                    <ProjectCards title={"Full-Stack MERN Web Hub App"} description={"Let's get together and make something fun that everyone can use!"} />
+                    <ProjectCards title={"Full-Stack MERN Web Hub App"} description={"Let's get together and make something fun that everyone can use!"} />
+                    <ProjectCards title={"Full-Stack MERN Web Hub App"} description={"Let's get together and make something fun that everyone can use!"} />
+                </div>
             </div>
-
         </>
     )
 }

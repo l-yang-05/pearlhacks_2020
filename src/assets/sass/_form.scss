@@ -34,3 +34,10 @@ form {
     background-color: #B23A48 !important;
     border-color: #B23A48 !important;
 }
+
+
+@media(max-width: 425px){
+    form{
+        width: 80%;
+    }
+}
