@@ -276,6 +276,12 @@ form {
   border: 1px solid black !important;
 }
 
+.motto{
+  width: 100%;
+  height: auto;
+}
+
+
 .btn-primary {
   color: #fff;
   background-color: #B23A48 !important;
