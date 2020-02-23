@@ -270,6 +270,16 @@ form {
   padding: 25px;
 }
 
+p .tech-stack {
+  background-color: #c193b8;
+  width: fit-content;
+  padding: 5px;
+}
+
+.modal-body .tech-stack {
+  margin: 20px !important;
+}
+
 @media (max-width: 750px) {
   .project-container {
     display: grid;
