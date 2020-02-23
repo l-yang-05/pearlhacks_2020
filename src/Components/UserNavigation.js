@@ -5,7 +5,7 @@ import logo from '../assets/imgs/mauve-logo.png';
 const UserNavigation = () => {
     return (
         <Navbar expand="md" className='pb-4'>
-            <Navbar.Brand href="/">
+            <Navbar.Brand>
                 <img src={logo} alt="logo" className="logo" />
             </Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
