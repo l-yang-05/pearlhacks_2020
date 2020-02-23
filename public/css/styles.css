@@ -168,7 +168,7 @@ hr {
 }
 
 .success {
-  background-color: red;
+  background-color: #D4A1C9;
   color: white;
 }
 .success:before {

@@ -12,8 +12,9 @@
         font-size: 30px;
     }
     &-item {
+        // position: relative;
         border: 1px solid black;
-        padding: 20px;
+        padding: 80px;
         margin: 20px;
         border-radius: 5px;
         height: 200px;
@@ -24,7 +25,8 @@
             height: 100px;
         }
         &-name {
-            
+            text-align: center;
+            // position: absolute;
         }
     }
     
@@ -48,8 +50,10 @@
 }
 
 .success {
-    background-color: red; 
+    background-color: #D4A1C9;
+    border: 0 solid white;
     color: white;
+    padding-top: 45px;
     &:before {
         content: "\2713";
         color: white;

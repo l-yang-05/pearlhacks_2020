@@ -137,7 +137,7 @@ hr {
 }
 .survey-item {
   border: 1px solid black;
-  padding: 20px;
+  padding: 80px;
   margin: 20px;
   border-radius: 5px;
   height: 200px;
@@ -149,6 +149,9 @@ hr {
   .survey-item {
     height: 100px;
   }
+}
+.survey-item-name {
+  text-align: center;
 }
 @media (min-width: 900px) {
   .survey-items {
@@ -168,8 +171,10 @@ hr {
 }
 
 .success {
-  background-color: red;
+  background-color: #D4A1C9;
+  border: 0 solid white;
   color: white;
+  padding-top: 45px;
 }
 .success:before {
   content: "✓";
