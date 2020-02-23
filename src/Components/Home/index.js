@@ -13,7 +13,7 @@ const Home = () => {
       </div>
       {/* end photo */}
 
-      <img src={Motto} alt="motto" className="motto" />
+      <img src={Motto} alt="motto" className="motto"/>
       {/* about cards */}
       <div className="cards">
         <Cards title={"Our Mission"}
