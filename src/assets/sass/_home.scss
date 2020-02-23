@@ -9,15 +9,26 @@
 }
 
 .cards {
-    padding: 20px;
+    padding: 25px;
     &__item {
-        background-color: #D4A1CA; 
+        background-color: white; 
         padding: 20px;
         margin: 10px;
+        margin-bottom: 50px;
+        display: flex;
         border-radius: 5px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    svg{
+        height: 100px;
+        width: 100px;
+        padding: 5px;
+        fill: #D4A1CA;
     }
     @media (min-width: 900px){
-        background-color: red;
+        background-color: #B23A48;
         display: grid;
         grid-template-columns: 33% 33% 33%;
     }

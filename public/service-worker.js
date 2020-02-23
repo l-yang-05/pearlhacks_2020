@@ -1,5 +1,5 @@
-console.log("Hi from your service-worker.js file! ECOM MOBILE");
 
+// console.log("Hi from your service-worker.js file! ECOM MOBILE");
 const FILES_TO_CACHE = [
   "/",
   "./",

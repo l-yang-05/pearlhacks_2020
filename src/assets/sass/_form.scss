@@ -18,3 +18,19 @@ form {
     background-image: url(https://images.unsplash.com/photo-1573495628363-7114730a4a11?ixlib=rb-1.2.1&auto=format&fit=crop&w=2100&q=80);
     background-position: center;
 }
+
+.form-control{
+    border: 1px solid black !important;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #B23A48;
+    border-color: #B23A48;
+}
+
+
+.btn-primary:hover {
+    background-color: #B23A48;
+    border-color: #B23A48;
+}
