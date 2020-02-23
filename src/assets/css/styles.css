@@ -48,13 +48,13 @@ nav.navbar-light button.navbar-light-button {
 }
 
 .home-img {
-  width: 100vw;
-  height: 20%;
-  object-fit: cover;
+  width: 100%;
+  height: 90vh;
 }
 .home-img img {
+  object-fit: cover;
   width: 100%;
-  height: 20%;
+  height: 100%;
 }
 
 .cards__item {
@@ -71,8 +71,33 @@ nav.navbar-light button.navbar-light-button {
 }
 
 .footer {
-  background-color: purple;
-  height: 200px;
+  background-color: white;
+  padding: 40px;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+}
+
+.sm-icon {
+  height: 50px;
+  width: 50px;
+  margin-left: 20px;
+}
+.sm-icon svg {
+  fill: purple;
+}
+
+.survey-question-one, .survey-question-two {
+  text-align: center;
+}
+.survey-question-one {
+  padding-top: 20px;
+  padding-bottom: 8px;
+  margin: 0;
+  font-size: 20px;
+}
+.survey-question-two {
+  font-size: 30px;
 }
 
 

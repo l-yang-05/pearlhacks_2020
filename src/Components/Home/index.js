@@ -1,6 +1,7 @@
 import React from 'react';
 import Cards from './Cards';
 import Motto from '../../assets/imgs/mauve-motto.png';
+import Footer from '../Footer';
 
 const Home = () => {
   return (
@@ -19,12 +20,7 @@ const Home = () => {
         <Cards title={"Our Vision"} description={"Our vision is to bridge the gender gap within tech by providing women with the tools and support to succeed."} />
       </div>
       {/* end about cards */}
-
-      {/* footer */}
-      <footer className="footer">
-
-      </footer>
-      {/* end footer */}
+      <Footer />
     </>
   );
 }

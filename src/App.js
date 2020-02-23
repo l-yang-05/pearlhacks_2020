@@ -3,6 +3,8 @@ import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 import Home from './Components/Home';
 import SignUp from './Components/SignUp';
 import Navigation from './Components/Navigation';
+import Survey from './Components/Survey';
+import Footer from './Components/Footer';
 
 function App() {
   return (
@@ -11,8 +13,9 @@ function App() {
       <Router>
         <Route exact path="/" component={Home} />
         <Route exact path="/signup" component={SignUp} />
-        {/* <Route exact path="/dashboard" component={}/> */}
+        <Route path="/survey" component={Survey} />
       </Router>
+      <Footer />
     </>
   );
 }

@@ -1,0 +1,16 @@
+.survey {
+    &-question-one, &-question-two {
+        text-align: center;
+        // padding-top: 20px;
+    }
+    &-question-one {
+        padding-top: 20px;
+        padding-bottom: 8px;
+        margin: 0;
+        font-size: 20px;
+    }
+    &-question-two {
+        // padding-top: 10px;
+        font-size: 30px;
+    }
+}

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Nav, Navbar, Button } from 'react-bootstrap';
+import { Nav, Navbar} from 'react-bootstrap';
 import logo from '../assets/imgs/mauve-logo.png';
 
 
