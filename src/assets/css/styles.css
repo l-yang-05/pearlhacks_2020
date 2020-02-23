@@ -144,18 +144,34 @@ hr {
 }
 
 .avatar-icon{
-  height:250px;
+  height: 250px;
   width: auto;
-}
-
-
-.info-container{
-  margin: 25px;
+  margin: 20px;
 }
 
 .account-container{
   display: flex;
+  margin: 10px;
 }
+
+.info-container{
+  margin: 35px;
+}
+
+.info-container ul{
+  display: flex;
+  list-style: none;
+  padding: 0;
+}
+
+.info-container ul li{
+  margin: 10px;
+  padding: 15px;
+  box-shadow: grey 2px 2px 5px;
+  background-color: #d4a1c9;
+  border-radius: 20px 5px 20px 5px
+}
+
 .survey-item:hover {
   transform: scale(1.02);
 }

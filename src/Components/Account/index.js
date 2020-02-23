@@ -4,9 +4,8 @@ import UserNavigation from '../UserNavigation';
 import pfp from '../../assets/imgs/girl.svg'
 
 const Account = () => {
-    let [interest, setInterest] = useState([]);
+    let [interest, setInterest] = useState([{ "skill": "React.js" }, { "skill": "Node.js" }, { "skill": "Full-Stack" }, { "skill": "MongoDB" }]);
 
-    setInterest = ["React.js", "Node.js", "Full-Stack", "MongoDB"];
 
     return (
         <>
@@ -21,7 +20,7 @@ const Account = () => {
                     <ul>
                         {interest.map((item, index) => {
                             return (
-                                <li>{item}</li>
+                                <li key={index}>{item.skill}</li>
                             )
                         }
                         )
