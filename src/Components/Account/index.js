@@ -4,7 +4,7 @@ import UserNavigation from '../UserNavigation';
 import pfp from '../../assets/imgs/girl.svg'
 
 const Account = () => {
-    const [interest, setInterest] = useState([]);
+    let [interest, setInterest] = useState([]);
 
     setInterest = ["React.js", "Node.js", "Full-Stack", "MongoDB"];
 
@@ -17,7 +17,16 @@ const Account = () => {
                     <h1>Account Details</h1>
                     <h2>Name: Lucy Yang</h2>
                     <h2>Email: ly.yang005@gmail.com</h2>
-                    <h2>Interests: React.js, Node.js, MERN-Stack, Full-Stack</h2>
+                    <h2>Interests:</h2>
+                    <ul>
+                        {interest.map((item, index) => {
+                            return (
+                                <li>{item}</li>
+                            )
+                        }
+                        )
+                        }
+                    </ul>
                 </div>
             </div>
 
