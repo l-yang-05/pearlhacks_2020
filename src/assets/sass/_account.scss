@@ -11,10 +11,12 @@
     margin: 10px;
     justify-content: center;
     align-items: center;
+    width:100%;
 }
 
 .info-container{
     margin: 35px;
+    width: 100%;
 }
 
 .info-container h1{
@@ -32,11 +34,24 @@ font-style: italic;
 }
 
 .info-container ul li{
-  margin: 10px;
+    margin: 10px;
     padding: 15px;
     box-shadow: grey 2px 2px 5px;
     background-color: #d4a1c9;
     border-radius: 20px 5px 20px 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-self: center;
+}
+
+.account-heading{
+    color:#B23A48;
+    margin-top:50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .work-container{
@@ -47,6 +62,7 @@ font-style: italic;
     background-color: #b43949;
     height: 250px;
     color: white;
+    width:100%;
   }
   
 .work-container p{
@@ -62,7 +78,7 @@ font-style: italic;
 .connect-container h2{
     font-size: 2.5em;
 }
-  .connect-container{
+.connect-container{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -70,4 +86,51 @@ font-style: italic;
     background-color: #d4a1c9;
     height: 250px;
     color: black;   
+}
+@media(min-width: 768px){
+    .avatar-icon{
+        height: 250px;
+    }
+   }
+
+   @media(min-width: 425px){
+    .avatar-icon{
+        height: 150px;
+    }
+    .account-container{
+        flex-direction: column;
+    }
+  
+    .info-container h2{
+     font-size: 1.5rem;
+     margin: 10px;
+    }
+    .work-container h2, .connect-container h2{
+      font-size: 1.5em;
   }
+  
+  .work-container p, .connect-container p{
+    font-size: 1em;
+    text-align: center;
+  }
+  
+   }
+
+
+   @media(min-width: 375px){
+    .account-container{
+        display: flex;
+        flex-direction: column;
+    }
+  .info-container h2{
+      font-size: 1em;
+     }
+  
+  .info-container ul{
+    flex-wrap: wrap;
+  }
+  .work-container p, .connect-container p{
+    font-size: .8em;
+    text-align: center;
+  } }
+  
