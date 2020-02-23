@@ -58,11 +58,16 @@ nav.navbar-light button.navbar-light-button {
   height: 100%;
 }
 
+.motto {
+  width: 100%;
+  height: auto;
+}
+
 .cards {
   padding: 25px;
 }
 .cards__item {
-  background-color: white;
+  background-color: #B23A48;
   padding: 20px;
   margin: 10px;
   margin-bottom: 50px;
@@ -84,6 +89,10 @@ nav.navbar-light button.navbar-light-button {
     display: grid;
     grid-template-columns: 33% 33% 33%;
   }
+}
+
+.motto {
+  max-width: 100%;
 }
 
 footer {
@@ -142,73 +151,6 @@ hr {
   border-radius: 5px;
   height: 200px;
 }
-
-.avatar-icon{
-  height: 250px;
-  width: auto;
-  margin: 20px;
-  border-radius: 100%;
-  border: #d4a1c9 6px solid;
-}
-
-.account-container{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 10px;
-}
-
-.info-container{
-  margin: 35px;
-}
-
-.info-container ul{
-  display: flex;
-  list-style: none;
-  padding: 0;
-}
-
-.work-container p{
-  font-size: 1.5rem;
-}
-.connect-container p{
-  font-size: 1.5rem;
-}
-.work-container h2{
-  font-size: 2.5em;
-}
-
-.connect-container h2{
-  font-size: 2.5em;
-}
-
-.work-container{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  background-color: #b43949;
-  height: 250px;
-  color: white;
-}
-
-.connect-container{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  background-color: #d4a1c9;
-  height: 250px;
-  color: black;   
-}
-.info-container ul li{
-  margin: 10px;
-  padding: 15px;
-  box-shadow: grey 2px 2px 5px;
-  background-color: #d4a1c9;
-  border-radius: 20px 5px 20px 5px
-}
-
 .survey-item:hover {
   transform: scale(1.02);
 }
@@ -276,12 +218,6 @@ form {
   border: 1px solid black !important;
 }
 
-.motto{
-  width: 100%;
-  height: auto;
-}
-
-
 .btn-primary {
   color: #fff;
   background-color: #B23A48 !important;
@@ -293,11 +229,6 @@ form {
   border-color: #B23A48 !important;
 }
 
-.project-pfp{
-  height:50px;
-}
-
-
 .project-container {
   display: flex;
   flex-wrap: wrap;
@@ -306,10 +237,6 @@ form {
   padding: 25px;
   flex-wrap: wrap;
   background-color: #d4a1c9;
-}
-
-.info-container h1{
-  color: #B23A48;
 }
 
 .project__item {
@@ -324,9 +251,101 @@ form {
   width: 31.5%;
 }
 
+.project-pfp {
+  height: 50px;
+}
+
 .btn-secondary {
   background-color: #d4a1c9 !important;
   border-color: #d4a1c9 !important;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #B23A48 !important;
+  border-color: #B23A48 !important;
+}
+
+.btn-primary:hover {
+  background-color: #B23A48 !important;
+  border-color: #B23A48 !important;
+}
+
+.avatar-icon {
+  height: 250px;
+  width: auto;
+  margin: 20px;
+  border: #d4a1c9 6px solid;
+  border-radius: 100%;
+}
+
+.account-container {
+  display: flex;
+  margin: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.info-container {
+  margin: 35px;
+}
+
+.info-container h1 {
+  color: #B23A48;
+}
+
+.work-container p {
+  font-style: italic;
+}
+
+.info-container ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+}
+
+.info-container ul li {
+  margin: 10px;
+  padding: 15px;
+  box-shadow: grey 2px 2px 5px;
+  background-color: #d4a1c9;
+  border-radius: 20px 5px 20px 5px;
+}
+
+.work-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #b43949;
+  height: 250px;
+  color: white;
+}
+
+.work-container p {
+  font-size: 1.5rem;
+}
+
+.work-container h2 {
+  font-size: 2.5em;
+}
+
+.connect-container p {
+  font-size: 1.5rem;
+}
+
+.connect-container h2 {
+  font-size: 2.5em;
+}
+
+.connect-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #d4a1c9;
+  height: 250px;
+  color: black;
 }
 
 /*# sourceMappingURL=styles.css.map */
