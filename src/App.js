@@ -6,6 +6,7 @@ import Survey from './Components/Survey';
 import Footer from './Components/Footer';
 import Dashboard from './Components/Dashboard';
 import Account from './Components/Account';
+import HttpsRedirect from 'react-https-redirect';
 
 function App() {
   return (
