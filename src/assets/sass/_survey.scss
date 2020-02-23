@@ -12,13 +12,25 @@
         font-size: 30px;
     }
     &-item {
+        // position: relative;
         border: 1px solid black;
-        padding: 20px;
+        padding: 80px;
         margin: 20px;
         border-radius: 5px;
+        height: 200px;
         &:hover {
             transform: scale(1.02);
         }
+        @media (max-width: 900px){
+            height: 100px;
+        }
+        &-name {
+            text-align: center;
+            // position: absolute;
+        }
+    }
+    
+    &-items {
         @media (min-width: 900px){
             display: grid;
             grid-template-columns: 33% 33% 33%;
@@ -37,4 +49,16 @@
     }
 }
 
+.success {
+    background-color: #D4A1C9;
+    border: 0 solid white;
+    color: white;
+    padding-top: 45px;
+    &:before {
+        content: "\2713";
+        color: white;
+        font-size: 24px;
+        font-weight: 800;
+    }
+}
 

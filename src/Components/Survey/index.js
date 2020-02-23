@@ -1,39 +1,49 @@
-import React from 'react';
-import UserNavigation from '../UserNavigation';
+import React, {useState} from 'react';
+import Navigation from '../Navigation';
+
+const Button = ({c}) => {
+    const [choice, makeChoice] = useState(false)
+
+    const handleChoice = () => {
+        makeChoice(!choice)
+    }
+    return(
+        <div onClick={handleChoice}  className={"survey-item " + (choice ? "success" : "")}>
+            <p className="survey-item-name">{c}</p>
+        </div>
+    );
+}
+
 
 const Survey = () => {
-    return (
+    const reasons = [
+            "To find a mentor", "To make friends","To learn new things"
+       ] 
+    return(
         <>
-            <UserNavigation />
-            <div className="survey">
-                <p className="survey-question-one">
-                    Tell us a litte more about yourself...
-        </p>
-
-                <p className="survey-question-two">
-                    Why did you sign up for Mauve?
-        </p>
-
-                <div className="survey-item">
-                    To find a mentor
+        <Navigation />
+        <div>
+            <p className="survey-question-one">
+                Tell us a little bit about yourself?
+            </p>
+            <p className="survey-question-two">
+                Why do you want to join Mauve?
+            </p>
+            <div className="survey-items">
+            {reasons.map(c => (               
+                <>   
+                <Button c={c}/>
+                </>
+            ))}
             </div>
-
-                <div className="survey-item">
-                    To make friends
+            <div className="survey-button">
+                <button>
+                Submit
+                </button>
             </div>
-
-                <div className="survey-item">
-                    To learn new things
-            </div>
-
-                <div className="survey-button">
-                    <button >
-                        Submit
-            </button>
-                </div>
-            </div>
+        </div>
         </>
-    );
+    )
 }
 
 export default Survey;
