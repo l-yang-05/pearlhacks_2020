@@ -1,7 +1,6 @@
 .survey {
     &-question-one, &-question-two {
         text-align: center;
-        // padding-top: 20px;
     }
     &-question-one {
         padding-top: 20px;
@@ -10,7 +9,32 @@
         font-size: 20px;
     }
     &-question-two {
-        // padding-top: 10px;
         font-size: 30px;
     }
+    &-item {
+        border: 1px solid black;
+        padding: 20px;
+        margin: 20px;
+        border-radius: 5px;
+        &:hover {
+            transform: scale(1.02);
+        }
+        @media (min-width: 900px){
+            display: grid;
+            grid-template-columns: 33% 33% 33%;
+        }
+    }
+
+    &-button {
+        width: 100px;
+        margin: 50px auto;
+        button {
+            background-color: #B23A48;
+            padding: 10px 20px;
+            border-radius: 5px;
+            color: white;
+        }
+    }
 }
+
+
