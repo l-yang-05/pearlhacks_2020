@@ -147,10 +147,14 @@ hr {
   height: 250px;
   width: auto;
   margin: 20px;
+  border-radius: 100%;
+  border: #d4a1c9 6px solid;
 }
 
 .account-container{
   display: flex;
+  justify-content: center;
+  align-items: center;
   margin: 10px;
 }
 
@@ -164,6 +168,39 @@ hr {
   padding: 0;
 }
 
+.work-container p{
+  font-size: 1.5rem;
+}
+.connect-container p{
+  font-size: 1.5rem;
+}
+.work-container h2{
+  font-size: 2.5em;
+}
+
+.connect-container h2{
+  font-size: 2.5em;
+}
+
+.work-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #b43949;
+  height: 250px;
+  color: white;
+}
+
+.connect-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #d4a1c9;
+  height: 250px;
+  color: black;   
+}
 .info-container ul li{
   margin: 10px;
   padding: 15px;
@@ -258,6 +295,10 @@ form {
   padding: 25px;
   flex-wrap: wrap;
   background-color: #d4a1c9;
+}
+
+.info-container h1{
+  color: #B23A48;
 }
 
 .project__item {
