@@ -1,10 +1,12 @@
 import React from 'react';
 import Cards from './Cards';
 import Motto from '../../assets/imgs/mauve-motto.png';
+import Navigation from '../Navigation';
 
 const Home = () => {
   return (
     <>
+      <Navigation />
       {/* photo */}
       <div className="home-img">
         <img src="img/womenintech.jpg" alt="wit" />

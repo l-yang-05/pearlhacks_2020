@@ -2,10 +2,12 @@ import React from 'react';
 import { Form, Button } from 'react-bootstrap';
 import '../../assets/css/styles.css';
 import { Link } from 'react-router-dom';
+import Navigation from '../Navigation';
 
 const Login = () => {
     return (
         <>
+            <Navigation />
             <div className="signUp">
                 <Form>
                     <h1>Sign Up</h1>
