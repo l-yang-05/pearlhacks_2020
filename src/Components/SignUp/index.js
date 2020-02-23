@@ -1,6 +1,7 @@
 import React from 'react';
 import { Form, Button } from 'react-bootstrap';
 import '../../assets/css/styles.css';
+import { Link } from 'react-router-dom';
 
 const Login = () => {
     return (
@@ -21,9 +22,12 @@ const Login = () => {
                         <Form.Label>Password</Form.Label>
                         <Form.Control type="password" placeholder="Password" />
                     </Form.Group>
-                    <Button variant="primary" type="submit">
-                        Submit
+                    <Link to="/survey">
+                        <Button variant="primary" type="submit">
+                            Submit
                 </Button>
+                    </Link>
+
                 </Form>
             </div>
         </>
