@@ -60,10 +60,22 @@ nav.navbar-light button.navbar-light-button {
 
 .cards__item {
   background-color: #C08FE8;
-  padding: 20px;
   margin: 10px;
+  margin-bottom: 50px;
+  display: flex;
   border-radius: 5px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 25px;
 }
+
+.cards svg{
+  height: 100px;
+  width: 100px;
+  padding: 5px;
+}
+
 @media (min-width: 900px) {
   .cards {
     display: grid;
@@ -77,6 +89,7 @@ nav.navbar-light button.navbar-light-button {
   height: 150px;
   display: flex;
   justify-content: center;
+  box-shadow: black 5px 5px 20px;
 }
 
 .sm-icon {

@@ -1,9 +1,10 @@
 import React from 'react';
 
-const Cards = ({title, description}) =>{
+const Cards = ({ title, symbol, description }) => {
     return (
         <div className="cards__item">
-            <h2>    
+            {symbol}
+            <h2>
                 {title}
             </h2>
             <p>
