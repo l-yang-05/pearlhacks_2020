@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Button, Modal } from 'react-bootstrap';
-
+import pfp from '../../assets/imgs/girl.svg';
 
 const Cards = ({ title, name, avatar, description, tech }) => {
     const [show, setShow] = useState(false);
@@ -9,11 +9,14 @@ const Cards = ({ title, name, avatar, description, tech }) => {
     const handleShow = () => setShow(true);
     return (
         <div className="project__item">
-            {avatar}
-            <h2>
-                {title}
-            </h2>
-            <h3>{name}</h3>
+            {/* {avatar} */}
+            <div>
+                <img src={pfp} alt="profile-pic" className="project-pfp" />
+                <h2>
+                    {title}
+                </h2>
+                <h3>{name}</h3>
+            </div>
             <p>
                 {description}
             </p>
@@ -23,6 +26,7 @@ const Cards = ({ title, name, avatar, description, tech }) => {
 
             <Modal show={show} onHide={handleClose}>
                 <Modal.Header closeButton>
+
                     <Modal.Title>{title}</Modal.Title>
                 </Modal.Header>
                 <Modal.Body>{name}</Modal.Body>
@@ -34,7 +38,7 @@ const Cards = ({ title, name, avatar, description, tech }) => {
                     </Button>
                     {/* <a href={"mailto:" + `${email}`}> */}
                     <a href="mailto:lyang@redventures.com">
-                        <Button variant="primary" onClick={handleClose}>
+                        <Button onClick={handleClose}>
                             Contact me!
                     </Button>
                     </a>
