@@ -1,5 +1,5 @@
+console.log("Hi from your service-worker.js file! ECOM MOBILE");
 
-// console.log("Hi from your service-worker.js file! ECOM MOBILE");
 const FILES_TO_CACHE = [
   "/",
   "./",
@@ -7,26 +7,33 @@ const FILES_TO_CACHE = [
   "/offline.html",
   "/favicon.ico",
   "/manifest.webmanifest",
-  "/icons/icon-72x72.png",
-  "/icons/icon-96x96.png",
-  "/icons/icon-128x128.png",
-  "/icons/icon-144x144.png",
-  "/icons/icon-152x152.png",
-  "/icons/icon-192x192.png",
-  "/icons/icon-384x384.png",
-  "/icons/icon-512x512.png",
-  "/img/womanintech.png"
+  "/assets/css/App.css",
+  "/assets/images/icons/icon-72x72.png",
+  "/assets/images/icons/icon-96x96.png",
+  "/assets/images/icons/icon-128x128.png",
+  "/assets/images/icons/icon-144x144.png",
+  "/assets/images/icons/icon-152x152.png",
+  "/assets/images/icons/icon-192x192.png",
+  "/assets/images/icons/icon-384x384.png",
+  "/assets/images/icons/icon-512x512.png",
+  "/assets/images/slide1.jpg",
+  "/assets/images/slide2.jpg",
+  "/assets/images/slide3.jpg",
+  "/assets/images/headshot1.jpg",
+  "/assets/images/headshot2.jpg",
+  "/assets/images/headshot3.jpg",
+  "/assets/js/loadapi.js"
 ]
 
-const CACHE_NAME = "static-cache-v2";
-const DATA_CACHE_NAME = "data-cache-v1";
+const CACHE_NAME = "static-cache-v5";
+const DATA_CACHE_NAME = "data-cache-v3";
 
 // install
 self.addEventListener("install", function (evt) {
   evt.waitUntil(
     caches.open(CACHE_NAME).then(cache => {
       console.log("Your files were pre-cached successfully!");
-      return cache.addAll(FILES_TO_CACHE);
+      cache.addAll(FILES_TO_CACHE);
     })
   );
 
@@ -52,7 +59,7 @@ self.addEventListener("activate", function (evt) {
 
 // fetch
 self.addEventListener("fetch", function (evt) {
-  if (evt.request.url.includes("/api/")) {
+  if (evt.request.url.includes("/")) {
     evt.respondWith(
       caches.open(DATA_CACHE_NAME).then(cache => {
         return fetch(evt.request)
