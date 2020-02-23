@@ -4,7 +4,7 @@ import './assets/css/styles.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import App from './App';
 import HttpsRedirect from 'react-https-redirect'
-import * as serviceWorker from './service-worker';
+// import * as serviceWorker from '../public/service-worker';
 
 
 ReactDOM.render(
@@ -17,4 +17,4 @@ ReactDOM.render(
 // unregister() to register() below. Note this comes with some pitfalls.
 // Learn more about service workers: https://bit.ly/CRA-PWA
 
-serviceWorker.register();
+// serviceWorker.register();
