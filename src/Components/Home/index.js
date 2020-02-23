@@ -1,5 +1,6 @@
 import React from 'react';
 import Cards from './Cards';
+import Motto from '../../assets/imgs/mauve-motto.png';
 
 const Home = () => {
   return (
@@ -10,6 +11,7 @@ const Home = () => {
       </div>
       {/* end photo */}
 
+      <img src={Motto} alt="motto" />
       {/* about cards */}
       <div className="cards">
         <Cards title={"Our Mission"} description={"Our mission is to empower and connect women in tech. "} />
