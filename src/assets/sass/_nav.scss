@@ -1,10 +1,13 @@
 nav.navbar-light {
-    background-color: purple;
-    color: white;
+    background-color: white;
+    color: black;
+    box-shadow: black 5px 5px 25px;
     .navbar-nav .nav-link {
-        color: white;
+        color: black;
+        font-weight: bold;
+        font-size: 1.5em;
         &:hover {
-            color: white;
+            color: #B23A48;
         }
     }
     .navbar-toggler-icon {
