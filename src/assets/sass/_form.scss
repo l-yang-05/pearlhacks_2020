@@ -1,20 +1,20 @@
-form{
+form {
     display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      box-shadow: grey 2px 2px 10px;
-      padding: 20px;
-      border-radius: 20px;
-      margin: 230px;
-      width: 500px;
-      background: white;
-  }
-  .signUp{
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      background-image: url(https://images.unsplash.com/photo-1573495628363-7114730a4a11?ixlib=rb-1.2.1&auto=format&fit=crop&w=2100&q=80);
-      background-position: center;
-  }
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: grey 2px 2px 10px;
+    padding: 20px;
+    border-radius: 20px;
+    margin: 230px;
+    width: 500px;
+    background: white;
+}
+.signUp{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url(https://images.unsplash.com/photo-1573495628363-7114730a4a11?ixlib=rb-1.2.1&auto=format&fit=crop&w=2100&q=80);
+    background-position: center;
+}

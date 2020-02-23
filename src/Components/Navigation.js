@@ -6,8 +6,10 @@ import logo from '../assets/imgs/mauve-logo.png';
 const Navigation = () => {
   return (
     <Navbar expand="md" className='pb-4'>
-      <Navbar.Brand href="/"><img src={logo} alt="logo" className="logo" /></Navbar.Brand>
-      <Navbar.Toggle aria-controls="basic-navbar-nav " />
+      <Navbar.Brand href="/">
+        <img src={logo} alt="logo" className="logo" />
+      </Navbar.Brand>
+      <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="ml-auto">
           <Nav.Item>
