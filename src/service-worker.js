@@ -70,7 +70,7 @@ function registerValidSW(swUrl, config) {
               return cache.addAll([
                 '/public/',
                 '/Components/',
-                '/App.css'
+                '/assets'
               ]);
             })
             if (navigator.serviceWorker.controller) {
